@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Introduction au CSS</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header id="S">Sommaire</header>
+    <ol>
+      <li><a class="nav-link" href="#Introduction_CSS">Introduction CSS</a></li>
+      <li><a class="nav-link" href="#Comment_ça_marche_?">Comment ça marche ?</a></li>
+      <li><a class="nav-link" href="#Utilisation_plus_courante">Utilisation plus courante</a></li>
+      <li><a class="nav-link" href="#Des_exemple_concrêt_?">Des exemple concrêt ?</a></li>
+      <li><a class="nav-link" href="#Génial_on_commence_quand_?">Génial on commence quand ?</a></li>
+    </ol>
+  </nav>
+  <main id="main-doc">
+    <section id="Introduction_CSS" class="main-section">
+      <header>Introduction CSS</header>
+      <hr>
+      <p>CSS est l'abréviation de « Cascading Style Sheets ».C'est un langage de style qui définit la présentation des documents HTML. Par exemple, CSS couvre les polices, les couleurs, les marges, les lignes, la hauteur, la largeur, les images d'arrière-plan, les positionnements évolués et bien d'autres choses. Attendez de voir !</p>
+    </section>
+    <br><hr>
+    <section id="Comment_ça_marche_?" class="main-section">
+      <header>Comment ça marche ?</header>
+      <hr>
+      <p>Le CSS est très facile d'utilisation on peut l'utilisé directement dans une page html, avec la fonction :</p>
+      <code>style=""</code>
+      <p>par exemple si on veut écrire un titre de couleur rouge, on fera</p>
+      <code>h1 style="color:red;"</code>
+    </section>
+    <br><hr>
+    <section id="Utilisation_plus_courante" class="main-section">
+      <header>Utilisation plus courante</header>
+      <hr>
+      <p>Bien sur si la totalité du CSS était écrit sur une page HTML, cela donnerait des pages bien trop charger et très peut lisible c'est pourquoi dansla plus part des cas on écrit le CSS sur une page a part et on la relis vie un lien placé dans la tête de notre page html</p>
+      <code>link rel="stylesheet "href="pageCSS"</code>
+      <p>ce faisant notre code reste facilement accessible et lisible, on peut aussi le noté dans la partit "head" de notre page html au lieu d'u mettre un lien vers une autre pages, mais un fichier CSS fait rapidement pas mal de ligne et ça sera toujours plus lisible de le traiter a part.</p>
+    </section>
+    <br><hr>
+    <section id="Des_exemple_concrêt_?" class="main-section">
+      <header>Des exemple concrêt ?</header>
+      <hr>
+      <ul>
+        <li>
+          <p>Définir la couleur d'un élément, sur du texte ou un titre ce sont les caractère qui prendrons la couleur définit</p>
+        </li>
+        <code>p{color:#FF0000;}
+        </code>
+        <li>
+          <p>Pour changer le fond d'un élément, ça peut être le fond d'une page entière ou d'une partit de la page, voir juste d'un mot pour le mettre en valeur</p>
+          <code>body{background-color:#8888AA;}</code>
+        </li>
+        <li>
+          <p>Il est possible de définir la hauteur ou la largeur d'un élément, très pratique surtout avec les image pour partager des image qui n'on pas forcément totue les même dimenssion mais en conservant une mise en page cohérente</p>
+          <code>height: 80px</code><br>
+          <code>width: 75%</code>
+          <p>Vous pouvez utilisez comme ordre de grandeur les px, les %, les em, les rem, et d'autre encore...
+        </li>
+        <li>
+          <p>N'oublier pas vous pouvez cibler des élément tel que la totalité de vos paragraphe, de vos div ou de vos titre, mais il sera en général plus pratique d'associé vos élément a des "id" ou des "class" et d'attribué les propriété du CSS a ses élément que vous pourez alors ciblez avec plus de précision</p>
+        </li>
+        <li>
+          <p>Pour les couleurs, vous pouvez tout simplement les écrire, ou utilisé un code RGB</p>
+          <code>color: rgb(200,0,100)</code>
+          <p>Mais aussi l'écrire en exadécimale, la solution que je préfère, ça fait un peut peur au début de remplacé les dizaine par des seizaine et d'inclure des lettre dans nos numéro mais une fois qu'on a compris c'est hyper simple !
+            <code>color: #AAAA30;
+        </li>
+      <ul>
+    </section>
+    <br><hr>
+    <section id="Génial_on_commence_quand_?" class="main-section">
+      <header>Génial on commence quand ?</header>
+      <hr>
+      <p>Tu peux commencer des aujourd'hui, il existe énormément de contenue GRATUIT sur internet pour apprendre tout type de langage de programation, je recomande FreeCodeCamp, pour avoir testé quelque tuto, ce que je préfère sur FreeCodeCamp c'est la pratique, apprendre des concept c'est cool mais c'est vraiment en pratiquant qu'on apprend !</p>
+    </section>
+  </main>
+</body>
+</html>
